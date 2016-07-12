@@ -1,0 +1,10 @@
+base: &BASE
+  port: 8080
+  host: "localhost"
+prod:
+  <<: *BASE
+  port: 8090
+test:
+  <<: *BASE
+dev:
+  <<: *BASE
