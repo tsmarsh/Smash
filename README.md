@@ -17,6 +17,25 @@ With minimal code Smash can:
 
 Could it be cleaner? Yes... I'm working on it. 
 
+## Building:
+
+Until I can publish Clobber on Maven Central, you need to download and install it.
+
+```
+git clone https://github.com/tsmarsh/Clobber.git
+cd Clobber
+mvn install
+```
+
+after that
+
+```
+mvn package
+mvn exec:java -Dconfig=test
+```
+
+should get you working server.
+
 ## TODO:
 
 * Performance tests
